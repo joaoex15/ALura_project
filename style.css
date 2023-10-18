@@ -38,17 +38,27 @@ body {
 }
 .apresetancao__links{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'krona one ','sans-serif';
+    font-weight: 400;
+    font-size: 24px;
 }
 .apresentação__links__link{
-    background-color: #22D4FD;
-    width: 280px;
+    /* background-color: #22D4FD; */
+    border: 10px  solid #22D4FD;
+    width: 388px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
     padding:21.5px 0px; 
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Montserrat',sans-serif;
 }
