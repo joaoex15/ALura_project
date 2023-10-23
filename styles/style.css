@@ -16,11 +16,12 @@
 }    
 body {
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secudaria);
+    background-color: black;
+    color: white;
 }
 .cabecario{
     padding: 2% 0% 0% 15%;
+
 }
 .cabecario__menu{
     display: flex;
@@ -28,34 +29,34 @@ body {
 }
 .cabecario__menu__link{
     font-family: 'Montserrat',sans-serif;
-    font-size: 24px; 
+    font-size: 1.5rem; 
     font-weight: 600;
-    color: var(--cor-trecearia);
+    color: #22D4FD;
     text-decoration: none;
 }
 .apresetancao{
     padding:  8% 15%;
-
+    gap: 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .apresetancao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family:'Krona one',sans-serif ;
 }
 
 .tirtulo-destaque{
-    color: var(--cor-trecearia);}
+    color:  #22D4FD ;}
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat',sans-serif;
 }
 .apresetancao__links{
@@ -69,18 +70,18 @@ body {
 .apresentacao__links__subtitulo{
     font-family: 'krona one ','sans-serif';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
-.apresentação__links__link{
+.apresentação__links__navegacao{
     /* background-color: #22D4FD; */
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px  solid  var(--cor-trecearia);
-    width: 388px;
+    border: 2px  solid  #22D4FD;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding:21.5px 0px; 
     text-decoration: none;
@@ -91,16 +92,35 @@ body {
 /* hover vc usar ao lado da clases para fazer uma modificação no css 
 , assim que mouse passar em cima do objeto */
 .apresentação__links__link:hover {
-    background-color: var(--cor-hoover);
+    background-color: gray;
     width: 400px;
     height: 40px;
 }
+.apresentação__imagem{
+    width:50% ;
+
+}
 .rodape{
     padding: 24px;
-    color: var(--cor-primaria);
+    color: black;
     text-align: center;
-    background-color: var(--cor-trecearia);
+    background-color: #22D4FD;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+@media (max-width :1200px ){
+    .cabecario{
+        padding: 10% ;
+    }
+    .cabecario__menu{
+        justify-content: center;
+    }
+    .apresetancao{
+        flex-direction: column-reverse ;
+    padding: 15%;
+    }
+    .apresetancao__conteudo{
+        width: auto;
+    }
 }
